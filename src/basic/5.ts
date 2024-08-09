@@ -9,8 +9,9 @@ enum DayOfWeek {
 }
 
 
-function isWeekend (day: DayOfWeek): void {
-console.log(day === "weekend");
+function isWeekend(day: DayOfWeek): boolean {
+    const dayOff = day === "weekend";
+    return dayOff;
 }
 
-isWeekend(DayOfWeek.Sunday)
+isWeekend(DayOfWeek.Sunday);
